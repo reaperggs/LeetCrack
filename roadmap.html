@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Roadmap Journey | LeetCrack</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: #f9f9f9;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 30px;
+      background: #fff;
+      box-shadow: 0 1px 2px #ccc;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: maroon;
+      font-weight: bold;
+    }
+
+    .journey-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .journey-step {
+      background: white;
+      border: 2px solid #007acc;
+      border-radius: 20px;
+      padding: 20px 40px;
+      margin: 15px 0;
+      width: 300px;
+      text-align: center;
+      position: relative;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .journey-step:hover {
+      transform: scale(1.05);
+      background-color: #f0f8ff;
+    }
+
+    .journey-step::before {
+      content: "🚩";
+      position: absolute;
+      left: -40px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 24px;
+    }
+
+    .line {
+      width: 4px;
+      height: 30px;
+      background-color: #007acc;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">LeetCrack<span style="color:black;">.</span></a>
+  <div>
+    <a href="companies.html">Companies</a>
+    <a href="roadmap.html">Roadmap</a>
+  </div>
+</nav>
+
+<div class="journey-container" id="journey"></div>
+
+<script src="js/roadmap.js"></script>
+
+</body>
+</html>

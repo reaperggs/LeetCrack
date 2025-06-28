@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LeetCrack | Questions</title>
+  <style>
+    body {
+        margin: 0;
+        font-family: sans-serif;
+        background-image: url('assets/background.png'); /* updated path */
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        }
+
+        .overlay {
+        background-color: rgba(255, 255, 255, 0.85);
+        min-height: 100vh;
+        padding-bottom: 50px;
+        }
+
+        nav.navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 30px;
+        box-shadow: 0px 1px 0px rgb(233, 233, 233);
+        font-weight: bold;
+        background-color: #fff;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        }
+
+        .navbar a {
+        text-decoration: none;
+        color: maroon;
+        font-size: 18px;
+        }
+
+        .centered {
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        }
+
+        .grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+        gap: 20px;
+        }
+
+        .card {
+        background-color: #f5f9ec;
+        border-radius: 15px;
+        padding: 20px;
+        min-width: 200px;
+        text-align: left;
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-title {
+        font-size: 18px;
+        font-weight: bold;
+        color: maroon;
+        text-decoration: none;
+        }
+
+        .card-title:hover {
+        text-decoration: underline;
+        }
+
+        .card-difficulty {
+        margin-top: 8px;
+        font-size: 14px;
+        color: #444;
+    }
+            .question-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 30px;
+        gap: 40px;
+        }
+
+        .question-list {
+        flex: 1;
+        min-width: 250px;
+        background-color: #fffdf5;
+        border-radius: 15px;
+        padding: 20px 25px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .question-list h3 {
+        text-align: center;
+        margin-bottom: 15px;
+        font-size: 20px;
+        color: #222;
+        }
+
+        ul {
+        list-style-type: none;
+        padding-left: 0;
+        }
+
+        li {
+        margin: 12px 0;
+        font-size: 16px;
+        }
+
+        li a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #222;
+        }
+
+        .easy li::before {
+        content: "🟢 ";
+        }
+        .medium li::before {
+        content: "🟠 ";
+        }
+        .hard li::before {
+        content: "🔴 ";
+    }
+
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <!-- Navbar -->
+    <nav class="navbar">
+      <a href="index.html">LeetCrack<span style="color: black;">.</span></a>
+      <div style="display: flex; gap: 20px;">
+        <a href="companies.html">Companies</a>
+        <a href="roadmap.html">Roadmap</a>
+      </div>
+    </nav>
+
+
+    <!-- Title -->
+    <div class="centered">
+      <h2 id="topic-heading">
+        <a href="index.html" style="text-decoration: none; color: maroon;">Topics</a> / <span id="topic-name">Topic</span>
+      </h2>
+    </div>
+
+    <div class="question-container">
+        <div class="question-list easy">
+            <h3>🟢 Easy</h3>
+            <ul id="easy-list"></ul>
+        </div>
+        <div class="question-list medium">
+            <h3>🟠 Medium</h3>
+            <ul id="medium-list"></ul>
+        </div>
+        <div class="question-list hard">
+            <h3>🔴 Hard</h3>
+            <ul id="hard-list"></ul>
+        </div>
+    </div>
+
+  </div>
+
+  <script src="js/questions.js"></script> <!-- updated path -->
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Topic Roadmap | LeetCrack</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      background-color: #fdfdfd;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 30px;
+      background: #fff;
+      box-shadow: 0 1px 2px #eee;
+      font-weight: bold;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: maroon;
+      font-size: 18px;
+    }
+
+    #topic-title {
+      text-align: center;
+      padding: 20px;
+      font-size: 1.8em;
+      color: #b30000;
+    }
+
+    #roadmap-container {
+      display: flex;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .difficulty-column {
+      flex: 1;
+      background: #fafafa;
+      padding: 15px;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      overflow-y: auto;
+      max-height: 85vh;
+    }
+
+    .difficulty-column h2 {
+      text-align: center;
+      color: maroon;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+
+    .problem-list {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .problem-list li {
+      margin-bottom: 6px;
+    }
+
+    .problem-list a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    .problem-list a:hover {
+      color: #007acc;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html">LeetCrack<span style="color: black;">.</span></a>
+    <div style="display: flex; gap: 20px;">
+      <a href="companies.html">Companies</a>
+      <a href="roadmap.html">Roadmap</a>
+    </div>
+  </nav>
+
+  <div id="topic-title">Loading...</div>
+  <div id="roadmap-container"></div>
+
+  <script src="js/topic-roadmap.js"></script>
+</body>
+</html>

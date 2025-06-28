@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LeetCrack</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-image: url('assets/background.png');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    .overlay {
+      background-color: rgba(255, 255, 255, 0.85);
+      min-height: 100vh;
+      padding-bottom: 50px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      box-shadow: 0px 1px 0px rgb(233, 233, 233);
+      font-weight: bold;
+      background-color: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: maroon;
+      font-size: 18px;
+    }
+
+    .centered {
+      display: flex;
+      justify-content: center;
+      padding-top: 20px;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      width: 300px;
+      font-size: 16px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #f5f9ec;
+      border-radius: 15px;
+      padding: 30px;
+      min-width: 150px;
+      text-align: center;
+      box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .card a {
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 20px;
+      color: maroon;
+    }
+
+    .card-link {
+        text-decoration: none;
+    }
+
+    .card-link .card {
+        color: maroon;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    #suggestions li:hover {
+        background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <nav class="navbar">
+      <a href="index.html">LeetCrack<span style="color: black;">.</span></a>
+      <div style="display: flex; gap: 20px;">
+        <a href="companies.html">Companies</a>
+        <a href="roadmap.html">Roadmap</a>
+      </div>
+    </nav>
+
+
+    <div class="centered">
+      <h1>Currated Leetcode Problems from top PBCs in INDIA 🇮🇳</h1>
+    </div>
+
+    <div class="grid">
+        <a href="topics.html?company=Amazon" class="card-link"><div class="card">Amazon</div></a>
+        <a href="topics.html?company=Google" class="card-link"><div class="card">Google</div></a>
+        <a href="topics.html?company=Microsoft" class="card-link"><div class="card">Microsoft</div></a>
+        <a href="topics.html?company=Adobe" class="card-link"><div class="card">Adobe</div></a>
+        <a href="topics.html?company=Cisco" class="card-link"><div class="card">Cisco</div></a>
+        <a href="topics.html?company=J.P.%20Morgan" class="card-link"><div class="card">J.P. Morgan</div></a>
+        <a href="topics.html?company=Zomato" class="card-link"><div class="card">Zomato</div></a>
+        <a href="topics.html?company=Uber" class="card-link"><div class="card">Uber</div></a>
+        <a href="topics.html?company=IBM" class="card-link"><div class="card">IBM</div></a>
+        <a href="topics.html?company=Flipkart" class="card-link"><div class="card">Flipkart</div></a>
+        <a href="topics.html?company=CRED" class="card-link"><div class="card">CRED</div></a>
+        <a href="companies.html" class="card-link"><div class="card">more...</div></a>
+    </div>
+  </div>
+</body>
+</html>
