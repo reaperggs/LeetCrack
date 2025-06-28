@@ -1,3 +1,7 @@
+## 🌐 Live Demo
+
+👉 [Visit LeetCrack Live](https://reaperggs.github.io/LeetCrack/)
+
 # 📊 LeetCrack — DSA & Coding Interview Prep Tracker
 
 LeetCrack is a lightweight, browser-based platform that helps candidates prepare for coding interviews by organizing company-wise and topic-wise problem lists, roadmaps, and resources — all in one clean, accessible place.
@@ -13,13 +17,12 @@ LeetCrack is a lightweight, browser-based platform that helps candidates prepare
 
 ## 📸 Preview
 
-![LeetCrack Screenshot](assets/images/background.png)
+![LeetCrack Screenshot](assets/Live-Screenshot.png)
 
 ## 📂 Project Structure
 
 leetcrack/
 ├── assets/
-│ ├── images/
 ├── data/
 ├── js/
 ├── index.html
